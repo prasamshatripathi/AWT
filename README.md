@@ -1,2 +1,2 @@
 # AWT
-creation of calcculator
+creation of calculator
