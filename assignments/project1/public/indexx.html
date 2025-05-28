@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+    <h1 name="titile">
+        Student registration form</h1>
+        <form action="/submit" method="POST">
+        <label for ="Name">Name</label>
+        <input type="name" id="name" name="Name"><br></form>
+        <label for="Address">Address</label>
+        <input type="Address" id="address" name="address"><br></br>
+        <label for="class">Class</label>
+         <input type="class" id="classroom" name="class"><br></br>
+         <script>
+            function Student(){
+
+               const name= document.getElementById("student name").value;
+
+            }
+            function stringReturn(name ,address){
+                return `student name:${name},student address:${address}`;
+            }
+            function getString(){
+                const value="sommethig";
+                return value
+            }
+            function numberReturn(){
+                const roll=1;
+             
+                if (roll < 20){
+                    return "groupA";
+} 
+if (roll <30){
+    return "group b"
+}
+  return "group c";
+            }
+            function loyaltyPoints(purchase) {
+    const points = purchase * 0.10; 
+    return points;
+}
+console.log(loyaltyPoints(200)); 
+
+            
+         </script>
+        <input type="submit" value="Submit">
+</form>
+</body>
+</html>

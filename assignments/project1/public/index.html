@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quotes</title>
+</head>
+<body>
+  <h1>Quotes List</h1>
+  <ul id="quote-list"></ul>
+
+  <script>
+    fetch('/api/quotes')
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById('quote-list');
+        data.forEach(quote => {
+          const item = document.createElement('li');
+          item.textContent = "${quote.text}" - ${quote.author};
+          list.appendChild(item);
+        });
+      })
+      .catch(err => {
+        console.error("Error fetching quotes:", err);
+      });
+  </script>
+</body>
+</html>
